@@ -20,18 +20,23 @@ import Nav from 'react-bootstrap/Nav';
 import Spinner from 'react-bootstrap/Spinner';
 import Toast from 'react-bootstrap/Toast';
 import Alert from 'react-bootstrap/Alert';
+import Card_01 from '../../components/card/Card_01';
+import './FindPage.css'
+import RatingCard from '../../components/ratingcard/RatingCard';
+import NavBar01 from '../../components/navbar01/NavBar01';
+import NavBar02 from '../../components/navbar02/NavBar02';
 export default function FindPage() {
     const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
     const [open, setOpen] = useState(false);
   return (
-    <main>
-    <div class="container py-4">
-     
-  
-      <footer class="pt-3 mt-4 text-body-secondary border-top">
-        © 2023
-      </footer>
+    <>
+    <div className="container">
+
+    <NavBar02/>
+      <RatingCard/>  
     </div>
-  </main>
+   
+ 
+      </>
   )
 }

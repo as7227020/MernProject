@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react'
 import "./Post.css"
 import { MoreVert } from '@mui/icons-material'
 import axios from 'axios'
-import { format } from 'timeago.js';
+//import { format } from 'timeago.js';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../state/AuthContext';
 
@@ -54,7 +54,7 @@ const handleLike = async () => {
                   PUBLIC_FOLDER+'/person/noAvatar.png'} alt='' className='postProfileImg'/>
                 </Link>
                 <span className='postUsername'>{userData.username}</span>
-                <span className='postDate'>{format(post.createdAt)}</span>
+                <span className='postDate'>{"1"/*format(post.createdAt)*/}</span>
                 </div>
                 
                 <div className='postTopRight'>
