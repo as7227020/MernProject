@@ -25,6 +25,24 @@ import './FindPage.css'
 import RatingCard from '../../components/ratingcard/RatingCard';
 import NavBar01 from '../../components/navbar01/NavBar01';
 import NavBar02 from '../../components/navbar02/NavBar02';
+import Social01 from '../../components/social/Social01';
+import Footer01 from '../../components/footer/Footer01';
+import GoogleMap01 from '../../components/mymap/GoogleMap01';
+import Title01 from '../../components/title/Title01';
+import Card_Top_01 from '../../components/card/Card_Top_01';
+import Content_01 from '../../components/content/Content_01';
+import Card_03 from '../../components/card/Card_03';
+import GetInfoView01 from '../../components/getinfoview/GetInfoView01';
+/*
+
+<Title01/>
+    <Card_Top_01/>
+    <Content_01/>
+    <Card_03/>
+    <GetInfoView01/>
+      <Social01/>
+*/
+
 export default function FindPage() {
     const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
     const [open, setOpen] = useState(false);
@@ -33,7 +51,8 @@ export default function FindPage() {
     <div className="container">
 
     <NavBar02/>
-      <RatingCard/>  
+    
+      <Footer01/>
     </div>
    
  

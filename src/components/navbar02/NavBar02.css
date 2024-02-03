@@ -30,6 +30,7 @@
     background-size: cover;
 }
 
+
 @media (max-width : 1000px){
     .navbar {
         background: var(--bs-dark);
@@ -45,3 +46,33 @@
         text-align: center;
     }
 }
+
+.MyIcon{
+   
+    margin-right: 10px;
+    color : royalblue;
+    
+}
+
+.title{
+    font-size: 45px !important;
+}
+
+.normal{
+    font-size: 20px !important;
+}
+
+.text-focus-in {
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
