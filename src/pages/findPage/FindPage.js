@@ -33,6 +33,11 @@ import Card_Top_01 from '../../components/card/Card_Top_01';
 import Content_01 from '../../components/content/Content_01';
 import Card_03 from '../../components/card/Card_03';
 import GetInfoView01 from '../../components/getinfoview/GetInfoView01';
+import Title02 from '../../components/title/Title02';
+import Explain3x2 from '../../components/content/Explain3x2';
+import Content_02 from '../../components/content/Content_02';
+import Content_04 from '../../components/content/Content_04';
+import Footer02 from '../../components/footer/Footer02';
 /*
 
 <Title01/>
@@ -51,8 +56,16 @@ export default function FindPage() {
     <div className="container">
 
     <NavBar02/>
-    
-      <Footer01/>
+    <Title02/>
+    <Content_01/>
+    <Explain3x2/>
+    <Content_02/>
+    <Card_03/>
+    <GetInfoView01/>
+    <Content_04/>
+    <GoogleMap01/>
+    <Social01/>
+      <Footer02/>
     </div>
    
  

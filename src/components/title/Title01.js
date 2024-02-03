@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Form, Image, Row ,Container} from 'react-bootstrap';
-
+import './Title.css'
 export default function Title01() {
   return (
     <header className='header'>
