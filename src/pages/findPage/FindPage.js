@@ -38,8 +38,9 @@ import Explain3x2 from '../../components/content/Explain3x2';
 import Content_02 from '../../components/content/Content_02';
 import Content_04 from '../../components/content/Content_04';
 import Footer02 from '../../components/footer/Footer02';
+import Title03 from '../../components/title/Title03';
 /*
-
+ <NavBar02/>
 <Title01/>
     <Card_Top_01/>
     <Content_01/>
@@ -55,8 +56,8 @@ export default function FindPage() {
     <>
     <div className="container">
 
-    <NavBar02/>
-    <Title02/>
+   
+    <Title03/>
     <Content_01/>
     <Explain3x2/>
     <Content_02/>

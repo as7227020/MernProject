@@ -1,0 +1,66 @@
+.title3header-fixedStyle{
+    background:  #151515 url('https://picsum.photos/id/391/1024/800') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+  .project:hover {
+    transform: scale(0.88);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+  }
+
+  .project {
+    transform: scale(0.85);
+  }
+  
+  
+  
+.title3header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(56, 56, 56, 0.7);
+  }
+  .title3header .text-container {
+    z-index: 10;
+  }
+  .title3header .roles {
+    font-family: "lora-regular", serif;
+  }
+  .title3header .social {
+    bottom: 50px;
+  }
+  
+  @media (max-width: 767px) {
+    .title3header .social .smi {
+      font-size: 35px;
+    }
+    
+  }
+
+
+  .services {
+    background: url("https://picsum.photos/id/383/1024/800") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .services::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .services .container {
+    z-index: 10;
+  }
+  

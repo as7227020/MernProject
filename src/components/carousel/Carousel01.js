@@ -6,7 +6,7 @@ import './Carousel01.css';
 export default function Carousel01() {
   //fade
   return (
-    <Carousel className='slide rounded-3'  fade>
+    <Carousel className='slide01 rounded-3'  fade>
     
     <Carousel.Item className='carousel-inner'>
     <Image className='d-block w-100 rounded-3 myimg' src='https://picsum.photos/id/38/1200/600' ></Image>

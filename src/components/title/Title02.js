@@ -33,18 +33,10 @@ export default function Title02() {
         </Row>
 
         <Row className='py-5'>
-          
-     
-        <Col md='12' >
-                <Carousel01/>
-            </Col>
-
-
-       
-
+          <Col md='12' >
+            <Carousel01/>
+          </Col>
         </Row>
-
-
 
     </Container>
     </header>
