@@ -23,6 +23,10 @@ import Carousel01 from '../carousel/Carousel01';
 import ContactUs01 from '../contactous/ContactUs01';
 
 
+import { CounterNumber } from '../../scripts/Spring';
+
+
+
 
 export default function Title03() {
     const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -38,6 +42,8 @@ export default function Title03() {
         setOpen(true);//開啟照片視窗
     }
 
+
+
   return (
     <>
     <header  className="title3header title3header-fixedStyle vh-100 text-center position-relative">
@@ -50,6 +56,7 @@ export default function Title03() {
       <p className="roles text-white text-uppercase fs-4">
         <span>網頁全端開發 | </span>
         <span>Unity遊戲製作</span>
+        <CounterNumber toNumber={85}/>
       </p>
 
       <a className="btn btn-outline-light btn-lg mt-3" 
