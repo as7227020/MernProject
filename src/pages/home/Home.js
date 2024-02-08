@@ -5,7 +5,6 @@ import Topbar from '../../components/TopBar/Topbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import TimeLine from '../../components/timeline/Timeline'
 import Rightbar from '../../components/rightbar/Rightbar'
-
 export default function Home() {
   return (
    <>
@@ -14,8 +13,8 @@ export default function Home() {
    <Sidebar/>
    <TimeLine/>
    <Rightbar/>
-   </div>
    
+   </div>
    </>
   )
 }

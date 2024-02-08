@@ -1,0 +1,10 @@
+.aboutme01-img {
+    width: 200px;
+  }
+
+  @media (max-width: 767px) {
+    .aboutme01-content {
+        flex-direction: column;
+      }
+    
+  }

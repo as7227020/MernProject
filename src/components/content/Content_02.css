@@ -1,0 +1,8 @@
+.invitation-bg{
+    background: linear-gradient(to bottom right,
+     rgba(221, 120, 120, 0.8),
+     rgba(0, 0, 0, 0.8)), 
+    url("https://picsum.photos/id/870/200/300?grayscale&blur=2")
+     center center no-repeat;
+    background-size: cover;
+}
