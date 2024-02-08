@@ -1,0 +1,82 @@
+.d-flex{
+display: flex;
+}
+
+.Container2{
+    background-color: aqua;
+    width: 800px;
+    margin: 0;
+}
+
+.outer{
+    background-color: blue;
+    padding: 15px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color: brown;
+    flex: 1;
+    margin: 3px;
+    color: aliceblue;
+    /*垂直水平致中*/
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.flex-2{
+    flex-grow: 2;
+}
+
+hr{
+    margin: 3rem;
+    color: black;
+}
+
+.w-100p{
+    width: 100px;
+    flex:  0 0 100px;
+}
+
+.h-100p{
+    height: 100px;
+}
+
+.row{
+    display: flex;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.col-3{
+    width: 33.333333%;
+
+    /*左右增加空位*/
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.card{
+    height: 100%;
+    border:  1px solid gray;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer{
+    margin-top: auto;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.img-fluid{
+    width: 100%;
+}

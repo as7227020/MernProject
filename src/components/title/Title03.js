@@ -11,7 +11,7 @@ import {useTypingEffect} from '../../scripts/TypingEffect'
 import {ScrollToPos} from '../../scripts/AutoScrollToElement'
 import AboutMe01 from '../content/AboutMe01';
 
-import {Col, Container, Row} from 'react-bootstrap';
+import {Button, Col, Container, Row} from 'react-bootstrap';
 
 
 import Lightbox from "yet-another-react-lightbox";
@@ -41,8 +41,43 @@ export default function Title03() {
         setSelectPictureIndex(index);//設定一打開要看哪個index的照片
         setOpen(true);//開啟照片視窗
     }
+    
+    const videoBtn = useRef(null);
+    const videoModal = useRef(null);
+    const video = useRef(null);
+    const openV = useState(false);
+    let videoSrc;
 
+    const SeeVideo = (openV) =>{
+      console.log('傳來的 :');
+     console.log({videoSrc});
+     openV.current = !openV;
+   
+    
+    }
 
+    useEffect(()=>{
+     
+      videoSrc = videoModal.current.getAttribute('data-bs-src');
+        console.log('設定');
+        console.log(videoSrc);
+
+        if (videoModal.current !== null) {
+          console.log('設定111');
+          videoModal.current.addEventListener('shown.bs.modal', () => {
+            console.log('設定222');
+            video.current.setAttribute(
+              'src',
+              'https://www.youtube.com/embed/u72H_zZzkcw' + '?autoplay=1;modestbranding=1;showInfo=0'
+            );
+          });
+        
+          videoModal.current.addEventListener('hide.bs.modal', () => {
+            console.log('設定333');
+            video.current.setAttribute('src', 'https://www.youtube.com/embed/u72H_zZzkcw');
+          });
+        }
+    },[])
 
   return (
     <>
@@ -229,7 +264,59 @@ export default function Title03() {
  
 
 
+    <section class="video my-6" ref={video}>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-column align-items-center">
+            <div class="position-relative">
+              <img src="https://picsum.photos/id/381/1024/800" alt="" class="img-fluid"/>
+              <a class="video-btn" onClick={() => SeeVideo({openV})} ref={videoModal}  data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-src="https://www.youtube.com/embed/u72H_zZzkcw">
+               
+              
+                <span class="video-play-button">
+                  <span></span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row video-points px-6 mt-5">
+          <div class="col-lg-4">
+            <h4 class="fw-bold">10 Years Of Experience</h4>
+            <p>
+              With over 10 years of experience, we have gained valuable insights and
+          expertise to deliver high-quality software solutions
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="fw-bold">Enduring Partnerships</h4>
+            <p>
+              We believe in building enduring partnerships with our clients. We
+              establish long-term relationships based on trust
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="fw-bold">Skilled Capable Team</h4>
+            <p>
+              Our team consists of skilled and capable professionals who are
+              passionate about delivering excellence
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="video-modal">
+        <div id="videoModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="ratio ratio-16x9">
+                <iframe frameborder="0" class="embed-responsive-item" id="video"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

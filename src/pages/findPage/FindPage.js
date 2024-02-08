@@ -39,6 +39,7 @@ import Content_02 from '../../components/content/Content_02';
 import Content_04 from '../../components/content/Content_04';
 import Footer02 from '../../components/footer/Footer02';
 import Title03 from '../../components/title/Title03';
+import Practice_flex from '../../components/practice/Practice_flex';
 /*
  <NavBar02/>
 <Title01/>
@@ -56,7 +57,7 @@ export default function FindPage() {
     <>
     <div className="container">
 
-   
+   <Practice_flex/>
     <Title03/>
     <Content_01/>
     <Explain3x2/>
