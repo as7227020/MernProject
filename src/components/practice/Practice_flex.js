@@ -27,71 +27,52 @@ export default function Practice_flex() {
     <Container className='Container2'>
 
         <div className='d-flex'>
-        <img style={{width:'75%',objectFit:'cover'}} src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
-
-
-                <div className='d-flex' style={{flexDirection:'column'}}>
-                <img style={{height:'50%', width:'100%', objectFit:'cover'}} src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
-                <img style={{height:'50%', width:'100%', objectFit:'cover'}} src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
-
-                </div>
-
+          <img style={{width:'75%',objectFit:'cover'}} src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
+            <div className='d-flex' style={{flexDirection:'column'}}>
+              <img style={{height:'50%', width:'100%', objectFit:'cover'}} src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
+              <img style={{height:'50%', width:'100%', objectFit:'cover'}} src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
+            </div>
         </div>
+
+        <hr></hr>
 
 
         <div className='warp'>
+          
             <div className='d-flex' style={{alignItems:'center'}}>
-
                 <div className='w-50'>
                 <p>1321312</p>
                 </div>
-
                 <div className='w-50'>
-                <img
-                  src="https://picsum.photos/id/392/1024/800"
-                  alt="123"
-                  className="img-fluid"
-                />
+                <img src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid" />
                 </div>
-
             </div>
 
             <div className='d-flex' style={{alignItems:'center', flexDirection:'row-reverse'}}>
+              <div className='w-50'>
+                <p>1321312</p>
+              </div>
+              
+              <div className='w-50'>
+                <img src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
+              </div>
+            </div>
+            
+            <div className='d-flex' style={{alignItems:'center'}}>
 
-<div className='w-50'>
-<p>1321312</p>
-</div>
+              <div className='w-50'>
+                <p>1321312</p>
+              </div>
+              <div className='w-50'>
+                <img src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
+              </div>
 
-<div className='w-50'>
-<img
-  src="https://picsum.photos/id/392/1024/800"
-  alt="123"
-  className="img-fluid"
-/>
-</div>
-
-</div>
-
-<div className='d-flex' style={{alignItems:'center'}}>
-
-<div className='w-50'>
-<p>1321312</p>
-</div>
-
-<div className='w-50'>
-<img
-  src="https://picsum.photos/id/392/1024/800"
-  alt="123"
-  className="img-fluid"
-/>
-</div>
-
-</div>
+            </div>
                 
         </div>
-
-
-
+        
+        
+      <hr/>
 
 
         
