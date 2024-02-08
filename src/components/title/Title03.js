@@ -26,7 +26,7 @@ import ContactUs01 from '../contactous/ContactUs01';
 import { CounterNumber } from '../../scripts/Spring';
 import ModalVideo01 from '../modalexample/ModalVideo01';
 import ModalExample01 from '../modalexample/ModalExample01';
-import VideoContentt01 from '../videocontent/VideoContentt01';
+import VideoContent01 from '../videocontent/VideoContent01';
 
 
 
@@ -233,20 +233,19 @@ export default function Title03() {
     </section>
 
     <section className='py-5 bg-light'>
-      <VideoContentt01 props={'testVideo.mp4'} />
+      <VideoContent01 props={'testVideo.mp4'} /* 要傳網址或是本地都可以 testVideo.mp4  https://www.youtube.com/watch?v=LXb3EKWsInQ*/ />
     </section>
  
 
 
-    <section class="video my-6">
+    <section class="video my-3">
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex flex-column align-items-center">
             <div class="position-relative">
-              <img src="https://picsum.photos/id/381/800/600" alt="" class="img-fluid"/>
+              <img src="https://picsum.photos/id/381/400/200" alt="" class="img-fluid"/>
               <span class="video-play-button" onClick={() => setModalShow(true)}>
                   <span>
-                    
                   </span>
                 </span>
              <ModalVideo01  show={modalShow} onHide={() => setModalShow(false)}  />

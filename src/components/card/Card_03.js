@@ -5,7 +5,7 @@ export default function Card_03() {
   return (
     <section>
     <Container>
-      <Row className='text-center'>
+      <Row className='text-center py-5'>
 
         <Col md='4'>
         <Image src='https://picsum.photos/id/177/200/300' className="rounded-circle mb-3" ></Image>
