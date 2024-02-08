@@ -24,6 +24,9 @@ import ContactUs01 from '../contactous/ContactUs01';
 
 
 import { CounterNumber } from '../../scripts/Spring';
+import ModalVideo01 from '../modalexample/ModalVideo01';
+import ModalExample01 from '../modalexample/ModalExample01';
+import VideoContentt01 from '../videocontent/VideoContentt01';
 
 
 
@@ -42,43 +45,10 @@ export default function Title03() {
         setOpen(true);//開啟照片視窗
     }
     
-    const videoBtn = useRef(null);
-    const videoModal = useRef(null);
-    const video = useRef(null);
-    const openV = useState(false);
-    let videoSrc;
 
-    const SeeVideo = (openV) =>{
-      console.log('傳來的 :');
-     console.log({videoSrc});
-     openV.current = !openV;
+      //Modal視窗用
+  const [modalShow, setModalShow] = React.useState(false);
    
-    
-    }
-
-    useEffect(()=>{
-     
-      videoSrc = videoModal.current.getAttribute('data-bs-src');
-        console.log('設定');
-        console.log(videoSrc);
-
-        if (videoModal.current !== null) {
-          console.log('設定111');
-          videoModal.current.addEventListener('shown.bs.modal', () => {
-            console.log('設定222');
-            video.current.setAttribute(
-              'src',
-              'https://www.youtube.com/embed/u72H_zZzkcw' + '?autoplay=1;modestbranding=1;showInfo=0'
-            );
-          });
-        
-          videoModal.current.addEventListener('hide.bs.modal', () => {
-            console.log('設定333');
-            video.current.setAttribute('src', 'https://www.youtube.com/embed/u72H_zZzkcw');
-          });
-        }
-    },[])
-
   return (
     <>
     <header  className="title3header title3header-fixedStyle vh-100 text-center position-relative">
@@ -261,22 +231,25 @@ export default function Title03() {
         </Row>
       </Container>
     </section>
+
+    <section className='py-5 bg-light'>
+      <VideoContentt01 props={'testVideo.mp4'} />
+    </section>
  
 
 
-    <section class="video my-6" ref={video}>
+    <section class="video my-6">
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex flex-column align-items-center">
             <div class="position-relative">
-              <img src="https://picsum.photos/id/381/1024/800" alt="" class="img-fluid"/>
-              <a class="video-btn" onClick={() => SeeVideo({openV})} ref={videoModal}  data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-src="https://www.youtube.com/embed/u72H_zZzkcw">
-               
-              
-                <span class="video-play-button">
-                  <span></span>
+              <img src="https://picsum.photos/id/381/800/600" alt="" class="img-fluid"/>
+              <span class="video-play-button" onClick={() => setModalShow(true)}>
+                  <span>
+                    
+                  </span>
                 </span>
-              </a>
+             <ModalVideo01  show={modalShow} onHide={() => setModalShow(false)}  />
             </div>
           </div>
         </div>

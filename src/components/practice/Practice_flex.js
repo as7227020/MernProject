@@ -2,6 +2,8 @@ import React from 'react'
 import './Practice_flex.css';
 import {Button, Col, Container, Row} from 'react-bootstrap';
 import { Justify } from 'react-bootstrap-icons';
+
+
 //style={{}}
 //{justifyContent:左右
 //alignItems 上下
@@ -22,9 +24,21 @@ import { Justify } from 'react-bootstrap-icons';
 //alignSelf : 'flex-end' 很像?  marginLeft:'auto'
 
 //alignSelf對自己位置調整 {alignSelf:'flex-end'}
+
+
+/* 影片封印
+  <div>
+      <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+      </div>
+*/
+
 export default function Practice_flex() {
   return (
     <Container className='Container2'>
+
+    
+
+      <hr></hr>
 
         <div className='d-flex'>
           <img style={{width:'75%',objectFit:'cover'}} src="https://picsum.photos/id/392/1024/800" alt="123" className="img-fluid"/>
@@ -38,7 +52,7 @@ export default function Practice_flex() {
 
 
         <div className='warp'>
-          
+
             <div className='d-flex' style={{alignItems:'center'}}>
                 <div className='w-50'>
                 <p>1321312</p>
