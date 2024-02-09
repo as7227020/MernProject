@@ -1,8 +1,14 @@
 import React from 'react'
-import { Col, Container, Image, Row ,InputGroup, Stack, Button} from 'react-bootstrap';
+import { Col, Container, Row} from 'react-bootstrap';
 import Card_02 from '../../components/card/Card_02';
+import { GraduallyShow } from '../../scripts/GraduallyShow';
+
 
 export default function Explain3x2() {
+    const emptyData = [1,2,3,4,5,6,7];
+
+
+
   return (
     <section className="points pb-5 py-5" >
     <Container>
@@ -15,41 +21,13 @@ export default function Explain3x2() {
 
         <Row>
             
-            <Col md='6' className='mb-4'>
-                <div className="">
-                    <Card_02/>
-                </div>
-            </Col>
-            <Col md='6' className='mb-4'>
-                <div className="">
-                    <Card_02/>
-                </div>
-            </Col>
-            <Col md='6' className='mb-4'>
-                <div className="">
-                    <Card_02/>
-                </div>
-            </Col>
-            <Col md='6' className='mb-4'>
-                <div className="">
-                    <Card_02/>
-                </div>
-            </Col>
-            <Col md='6' className='mb-4'>
-                <div className="">
-                    <Card_02/>
-                </div>
-            </Col>
-            <Col md='6' className='mb-4'>
-                <div className="">
-                    <Card_02/>
-                </div>
-            </Col>
-
-
-            
-          
-     
+            {emptyData.map(item => (
+                <Col md='6' className='mb-4'>
+                    <div className="">
+                        <GraduallyShow obj={<Card_02/>} />
+                    </div>
+                </Col>
+            ))}
 
 
         </Row>

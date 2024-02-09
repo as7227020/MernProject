@@ -1,4 +1,4 @@
-import React,{useEffect , useRef, useState} from 'react'
+import React,{useEffect , useRef, useState,useViewport} from 'react'
 import './Title03.css';
 
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -27,6 +27,8 @@ import { CounterNumber } from '../../scripts/Spring';
 import ModalVideo01 from '../modalexample/ModalVideo01';
 import ModalExample01 from '../modalexample/ModalExample01';
 import VideoContent01 from '../videocontent/VideoContent01';
+import { useInView } from 'react-spring';
+
 
 
 
@@ -51,6 +53,7 @@ export default function Title03() {
    
   return (
     <>
+
     <header  className="title3header title3header-fixedStyle vh-100 text-center position-relative">
     <div 
       className="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
@@ -87,8 +90,10 @@ export default function Title03() {
   </header>
 
   <section id='about'>
-  <AboutMe01 />
+  <AboutMe01/>
   </section>
+
+
   <ContactUs01/>
 
   <section id='about2'>
@@ -215,6 +220,7 @@ export default function Title03() {
 
            
         <Col  xs={12} md={6}>
+        
             <div className="project shadow-lg rounded-5 mb-3">
             <img
                   src="https://picsum.photos/id/381/1024/800"

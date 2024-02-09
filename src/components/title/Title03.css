@@ -7,8 +7,8 @@
 
   .project:hover {
     transform: scale(0.88);
-    transition: all 0.5s ease-in-out;
-    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.9;
   }
 
   .project {
@@ -124,3 +124,4 @@
     border-bottom: 16px solid transparent;
   }
   
+

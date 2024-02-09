@@ -40,6 +40,11 @@ import Content_04 from '../../components/content/Content_04';
 import Footer02 from '../../components/footer/Footer02';
 import Title03 from '../../components/title/Title03';
 import Practice_flex from '../../components/practice/Practice_flex';
+import Delayed from '../../scripts/Delayed';
+import DelayComp from '../../scripts/DelayedModel';
+import styled from 'styled-components';
+import AddFirend from '../../components/fbview/AddFirend';
+import FirendBar from '../../components/fbview/FirendBar';
 /*
  <NavBar02/>
 <Title01/>
@@ -50,6 +55,7 @@ import Practice_flex from '../../components/practice/Practice_flex';
       <Social01/>
 */
 
+
 export default function FindPage() {
     const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
     const [open, setOpen] = useState(false);
@@ -57,10 +63,26 @@ export default function FindPage() {
     <>
     <div className="container">
 
+<FirendBar/>
+
+    </div>
+   
+ 
+      </>
+    )
+}
+/*
+
+   <>
+    <div className="container">
+
+
    <Practice_flex/>
+   
     <Title03/>
     <Content_01/>
-    <Explain3x2/>
+    <Explain3x2 />
+   
     <Content_02/>
     <Card_03/>
     <GetInfoView01/>
@@ -68,9 +90,9 @@ export default function FindPage() {
     <GoogleMap01/>
     <Social01/>
       <Footer02/>
-    </div>
    
  
       </>
-  )
-}
+
+
+*/
