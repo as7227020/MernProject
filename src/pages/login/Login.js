@@ -29,11 +29,12 @@ export default function Login() {
   return (
     <div className='login'>
         <div className='loginWrapper'>
-            <div className='loginLeft'> 
-            <h3 className='loginLogo'>RedTea</h3>
-            <span className='loginDesc'>本世紀最強的社群軟體! RedTea!</span>
-            
+          
+            <div className='loginLeft'>
+              <h3 className='loginLogo'>RedTea</h3>
+              <span className='loginDesc'>本世紀最強的社群軟體! RedTea!</span>
             </div>
+
             <div className='loginRight'>
               <div className='loginBox'>
               <form className='loginBox2' onSubmit={(e) => handleSubmit(e)}>

@@ -17,6 +17,7 @@ import FindPage from './pages/findPage/FindPage';
         <Route path='/profile/:username' element={<Profile　/>}/>
         <Route path='/register' element={user ? <Navigate to="/" /> : <Register/>}/> 
 
+           <Route path='/' element={<FindPage/> }/>
 */
 
 // <Home/>
@@ -27,8 +28,8 @@ function App() {
     <HashRouter>
        
       <Routes>
-     
       <Route path='/' element={<FindPage/> }/>
+    
       
       </Routes>
    

@@ -45,6 +45,7 @@ import DelayComp from '../../scripts/DelayedModel';
 import styled from 'styled-components';
 import AddFirend from '../../components/fbview/AddFirend';
 import FirendBar from '../../components/fbview/FirendBar';
+import FriendBarContent from '../../components/fbview/FriendBarContent';
 /*
  <NavBar02/>
 <Title01/>
@@ -53,6 +54,10 @@ import FirendBar from '../../components/fbview/FirendBar';
     <Card_03/>
     <GetInfoView01/>
       <Social01/>
+
+
+      <AddFirend/>
+<FriendBarContent/>
 */
 
 
@@ -61,11 +66,10 @@ export default function FindPage() {
     const [open, setOpen] = useState(false);
   return (
     <>
-    <div className="container">
-
-<FirendBar/>
-
-    </div>
+    <Container fluid>
+    <AddFirend/>
+    <FriendBarContent/>
+    </Container>
    
  
       </>
