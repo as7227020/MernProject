@@ -56,8 +56,8 @@ import FriendBarContent from '../../components/fbview/FriendBarContent';
       <Social01/>
 
 
-      <AddFirend/>
-<FriendBarContent/>
+  <AddFirend/>
+    <FriendBarContent/>
 */
 
 
@@ -69,6 +69,8 @@ export default function FindPage() {
     <Container fluid>
     <AddFirend/>
     <FriendBarContent/>
+  
+  
     </Container>
    
  

@@ -12,17 +12,25 @@
 }
 
 .userimgroot{
+ 
 
+ 
+}
+
+.userimg{
 }
 
 .userimgroot img {
-    width: 120px;
+    width: 145px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+   
+    
   }
-
+/* mask-image: url("/public/logo512.png");*/
   
 .btnlayout{
     height: 30px;
@@ -32,7 +40,7 @@
     margin-bottom: 8px;
     border-radius: 3px;
     white-space: nowrap;
-    transform: scale(0.85);
+    transform: scale(0.8);
 }
 
 .texteffect{
@@ -58,25 +66,49 @@
     margin-top: 20px;
     width: 70%;
     border: 1px solid rgb(192, 192, 192);
-   
+   margin-bottom: 20px;
+   background-color: rgb(249, 249, 249);
 }
 
 
 .contaninerroot:hover{
     transform: scale(1.005);
-    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.contaninerroot:not(:hover) {
+  animation: slide-top-bk 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes shadow-drop-2-center {
-    0% {
-      transform: translateZ(0);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      transform: translateZ(50px);
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    border: 1.2px solid rgb(127, 127, 127);
   }
+  100% {
+    transform: translateY(-2px);
+    box-shadow: 1px 9px 7px -8px  rgb(168, 200, 241);
+ 
+    border: 1.2px solid rgb(168, 200, 241);
+  }
+}
+
+@keyframes slide-top-bk {
+  0% {
+    transform: translateY(-2px);
+    box-shadow: 1px 9px 7px -8px  rgb(168, 200, 241);
+    opacity: 1;
+    border: 1.2px solid rgb(168, 200, 241);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    opacity: 0.8;
+   
+    border: 1.2px solid rgb(127, 127, 127);
+  }
+}
 
 .text-container {
     display: -webkit-box;
@@ -86,14 +118,40 @@
   }
 
   .shadow-drop-center {
-	animation: scale-up-center 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000) alternate forwards;
+    animation: bounce-in-right 0.3s 0.1s both;
 }
-@keyframes scale-up-center {
-    0% {
-      transform: scale(0.8);
-    }
-    100% {
-      transform: scale(1);
+@keyframes bounce-in-right {
+  0% {
+    transform: translateX(30px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+  
+.btnroot{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+  @media (max-width: 767px) {
+    .btnroot {
+        flex-direction: row;
+      }
+      .btnch{
+        margin-right: 20px;
+      }
+    .usernameroot{
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
   }
-  
+

@@ -18,14 +18,14 @@ const FirendBar = () => {
             <Row >
                 <Col md='3' className='bgcolor' style={{}}>
                 <Row md={3} className='userimgroot' >
-                    <img src='assets/person/2.jpeg' alt='投向' className='userimg'/>
+                    <img src='assets/person/3.jpeg' alt='投向' className='userimg'/>
                 </Row>
                 </Col>
 
                 <Col className='bgcolor2'>
 
                 <Row style={{}}>
-                     <p className='' style={{fontWeight:'800',backgroundColor:'',marginBottom:'-0px'}}>使用者名字</p>
+                     <p className='usernameroot' style={{fontWeight:'800',backgroundColor:'',marginBottom:'-0px'}}>使用者名字</p>
                 </Row>
 
                 <Row style={{backgroundColor:''}}>
@@ -39,9 +39,9 @@ const FirendBar = () => {
                 </Col>
                 
                {BeSelect && (<>
-                <Col md='2' style={{flexDirection:'column',alignItems:'center',justifyContent:'center',display:'flex'}}>
-             <Row > <Button className='btnlayout shadow-drop-center' size='sm'>加入</Button></Row>
-             <Row > <Button variant="outline-primary" className='btnlayout shadow-drop-center'>刪除</Button></Row>
+                <Col md='2' className='btnroot'>
+             <Row className='btnch'> <Button className='btnlayout shadow-drop-center' size='sm'>加入</Button></Row>
+             <Row className='btnch'> <Button variant="outline-primary" className='btnlayout shadow-drop-center'>刪除</Button></Row>
                 </Col>
                </>)}
             </Row>
@@ -52,5 +52,7 @@ const FirendBar = () => {
         </>
     );
 }
+
+
 
 export default FirendBar;

@@ -28,8 +28,9 @@ function App() {
     <HashRouter>
        
       <Routes>
+     
       <Route path='/' element={<FindPage/> }/>
-    
+      
       
       </Routes>
    
