@@ -125,3 +125,68 @@
   }
   
 
+.text-start{
+  --shadow-color: 0deg 0% 0%;
+  --color:#9b70ff;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: 3px solid var(--color);
+  color: rgb(255, 255, 255);
+  padding: .5em 1em;
+  border-radius: .25em;
+
+  position: relative;
+  isolation: isolate;
+
+  --shadow-elevation-medium:
+  0px 0.6px 0.9px hsl(var(--shadow-color) / 0),
+  0.1px 12.7px 19.1px hsl(var(--shadow-color) / 0.73);
+
+    box-shadow: var(--shadow-elevation-medium);
+
+}
+
+
+
+.text-start::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  inset: 0;
+
+  scale: 0 1;
+  transform-origin: right;
+ 
+  transition: background 850ms;
+}
+.text-start:hover{
+  font-weight: 800;
+}
+.text-start:hover::after,
+.text-start:focus-visible::after{
+  transform-origin: left;
+  scale: 1 1;
+  background:#912424
+
+  
+}
+
+
+
+.box { 
+  position: relative;
+  --mask:
+    radial-gradient(40px at 100% 100%,#0000 calc(98% - 10px),#000 calc(100% - 10px) 98%,#0000),
+    conic-gradient(from 90deg at 20px 10px,#0000 25%,#000 0) -10px 0/100% calc(100% - 40px + 10px) repeat-x,
+    conic-gradient(at bottom 10px left 10px,#0000 25%,#000 0) 0 100%/calc(100% - 40px + 10px) 100% repeat-y;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: red;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}

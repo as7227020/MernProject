@@ -1,14 +1,13 @@
 import React , { useRef ,useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Bookmark, Home, MessageRounded, Notifications, Person, Search, Settings} from '@mui/icons-material'
-import AddModeratorIcon from '@mui/icons-material/AddModerator';
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import Button from 'react-bootstrap/Button';
 import './NavBar02.css'
-
+import mylogo from '../../mylogo.png';
 
 //data-bs-theme="dark" bg='dark' 
 export default function NavBar02() {
@@ -44,8 +43,8 @@ export default function NavBar02() {
     <>
     <Navbar ref={navRef} className='navbar fixed-top navbar-dark' expand="lg" >
       <Container>
-        <AddModeratorIcon className='MyIcon title text-focus-in'></AddModeratorIcon>
-        <a href='#' className='navbar-brand text-focus-in'>我是Nav標題</a>
+        <img src={mylogo} className='MyIcon'/>
+        <a href='#' className='navbar-brand'>履歷網站</a>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav  className='ms-auto'>

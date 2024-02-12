@@ -17,7 +17,7 @@ export default function AboutMe01() {;
         <img
           src="https://picsum.photos/id/391/400/400"
           alt=""
-          className="aboutme01-img img-fluid rounded-5"
+          className="aboutme01-img img-fluid rounded-3"
         />
         <p className="lead">
           獨立網頁全端開發者為目標, 目前在遊戲公司工作, 使用Unity, 主要處理遊戲戰鬥核心部分, 

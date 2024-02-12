@@ -46,6 +46,8 @@ import styled from 'styled-components';
 import AddFirend from '../../components/fbview/AddFirend';
 import FirendBar from '../../components/fbview/FirendBar';
 import FriendBarContent from '../../components/fbview/FriendBarContent';
+import Title_Video from '../../components/title/Title_Video';
+import Quote01 from '../../components/quote/Quote01';
 /*
  <NavBar02/>
 <Title01/>
@@ -66,11 +68,15 @@ export default function FindPage() {
     const [open, setOpen] = useState(false);
   return (
     <>
+   
     <Container fluid>
+    <NavBar02/>
+      <Title_Video/>
+    <Title03/>
     <AddFirend/>
     <FriendBarContent/>
   
-  
+    <Quote01/>
     </Container>
    
  

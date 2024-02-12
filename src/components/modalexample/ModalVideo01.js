@@ -21,9 +21,8 @@ export default function ModalVideo01(props) {
                 <Col >
                     <Container>
                     <div className=''>
-            <ReactPlayer className='' url= 'testVideo.mp4' width='100%'  height='100%' controls={true}/>
-           
-        </div>
+                        <ReactPlayer className='' url= '銀魂銀之魂篇12_353.mp4' width='100%'  height='100%' controls={true}/>
+                    </div>
                     </Container>
                 </Col>
             </Row>

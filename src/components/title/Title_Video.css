@@ -1,0 +1,129 @@
+.videoBG{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+/* text-decoration-thickness: 10px;*/
+.titleContent{
+   text-decoration-color: rgb(255, 250, 245);
+   text-decoration-line: underline;
+   text-decoration-thickness: 1px;
+   text-decoration-style: solid;
+   text-underline-offset: .25em;
+
+    animation: focus-in-expand 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .subcontentfirst{
+    animation: focus-in-contract 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.0s both;
+  }
+
+  .subcontent{
+    animation: focus-in-contract 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+  }
+
+
+  @keyframes focus-in-contract {
+    0% {
+        filter: blur(12px);
+        scale: 6;
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    height: 100vh;
+}
+
+.contentbtn{
+
+
+    --btnColor : #345972;
+    position: absolute;
+    top: 680px;
+    left: 10%;
+    
+    
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    color: white;
+    border: 2px solid rgb(73, 98, 146);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--btnColor);
+
+
+    isolation: isolate;
+    transform: rotate(0deg);
+    
+}
+.contentbtn:hover{
+    transform: rotate(-3deg);
+    transform-origin: 0% 100% 0;
+}
+.contentbtn::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background:  rgb(160, 181, 224);
+    inset: 0;
+
+    scale: 0 .1;
+    transform-origin: right;
+    transition: scale 300ms;
+   
+}
+
+.contentbtn:hover::after,
+.contentbtn:focus-visible::after{
+    scale: 1 .9;
+    transform-origin: left;
+    
+}

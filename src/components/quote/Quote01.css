@@ -1,0 +1,16 @@
+.quote{
+    position:fixed;
+    bottom: 2rem;
+    left: 5rem;
+    background: rgb(27, 23, 46);
+    padding: 1rem 1rem;
+    border-radius: .2rem;
+    opacity: .95;
+    
+    color: aliceblue;
+    font-weight: 700;
+    z-index: 1.1;
+
+}
+article{
+}

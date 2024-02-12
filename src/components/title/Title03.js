@@ -29,7 +29,7 @@ import ModalExample01 from '../modalexample/ModalExample01';
 import VideoContent01 from '../videocontent/VideoContent01';
 import { useInView } from 'react-spring';
 
-
+import { GraduallyShow } from '../../scripts/GraduallyShow';
 
 
 
@@ -55,25 +55,22 @@ export default function Title03() {
     <>
 
     <header  className="title3header title3header-fixedStyle vh-100 text-center position-relative">
+  
     <div 
       className="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
     >
       <h5 className="text-primary fs-3 fw-bold text-uppercase">作品集.</h5>
       <h1 className="display-1 fw-bold text-white">{TypeString}</h1>
-
       <p className="roles text-white text-uppercase fs-4">
         <span>網頁全端開發 | </span>
         <span>Unity遊戲製作</span>
         <CounterNumber toNumber={85}/>
       </p>
 
-      <a className="btn btn-outline-light btn-lg mt-3" 
+      <a className="mt-3 text-start" 
       onClick={objName => ScrollToPos('about')}>
         <div className="d-flex">
-          <div className="me-3">
-            <i className="fas fa-chevron-down"></i>
-          </div>
-          <div className="text-start">
+          <div className="">
             <span>移至我的資料</span>
           </div>
         </div>
@@ -90,14 +87,16 @@ export default function Title03() {
   </header>
 
   <section id='about'>
-  <AboutMe01/>
+    <GraduallyShow obj={ <AboutMe01/>}/>
+ 
   </section>
 
-
-  <ContactUs01/>
+  <GraduallyShow obj={   <ContactUs01/>}/>
+ 
 
   <section id='about2'>
-    <Carousel_Info01 className='bg-dark'/>
+  <GraduallyShow obj={  <Carousel_Info01 className='bg-dark'/>}/>
+   
   </section>
 
 
@@ -239,7 +238,11 @@ export default function Title03() {
     </section>
 
     <section className='py-5 bg-light'>
-      <VideoContent01 props={'testVideo.mp4'} /* 要傳網址或是本地都可以 testVideo.mp4  https://www.youtube.com/watch?v=LXb3EKWsInQ*/ />
+      <VideoContent01 props={'銀魂銀之魂篇10_351v2.mp4'} title={'銀魂351集'} /* 要傳網址或是本地都可以 testVideo.mp4  https://www.youtube.com/watch?v=LXb3EKWsInQ*/ />
+    </section>
+ 
+    <section className='py-5 bg-light'>
+      <VideoContent01 props={'銀魂銀之魂篇11_352.mp4'} title={'銀魂352集'} /* 要傳網址或是本地都可以 testVideo.mp4  https://www.youtube.com/watch?v=LXb3EKWsInQ*/ />
     </section>
  
 
