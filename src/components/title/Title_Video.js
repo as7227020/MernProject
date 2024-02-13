@@ -15,15 +15,11 @@ export default function Title_Video() {
         setTimeout(() => {
            
             SetplayStrIndex((playStrIndex)=> (playStrIndex+1));
-            console.log(playStrIndex);
-
-         
 
             subContentRef.current.classList.add("subcontent");
             if(playStrIndex >= subContentStr.length-1)
             {
                 SetplayStrIndex(0);
-             
             }
          
         }, 4000);

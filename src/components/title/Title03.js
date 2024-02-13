@@ -237,13 +237,20 @@ export default function Title03() {
       </Container>
     </section>
 
+
+{
+/* 要傳網址或是本地都可以 testVideo.mp4  https://www.youtube.com/watch?v=LXb3EKWsInQ*/ 
+/*
+
     <section className='py-5 bg-light'>
-      <VideoContent01 props={'銀魂銀之魂篇10_351v2.mp4'} title={'銀魂351集'} /* 要傳網址或是本地都可以 testVideo.mp4  https://www.youtube.com/watch?v=LXb3EKWsInQ*/ />
-    </section>
+      <VideoContent01 props={'銀魂銀之魂篇10_351v2.mp4'} title={'銀魂351集'} />
+      </section>
  
-    <section className='py-5 bg-light'>
-      <VideoContent01 props={'銀魂銀之魂篇11_352.mp4'} title={'銀魂352集'} /* 要傳網址或是本地都可以 testVideo.mp4  https://www.youtube.com/watch?v=LXb3EKWsInQ*/ />
-    </section>
+      <section className='py-5 bg-light'>
+        <VideoContent01 props={'銀魂銀之魂篇11_352.mp4'} title={'銀魂352集'} />
+      </section>
+*/ }
+
  
 
 

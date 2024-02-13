@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './Practice_flex.css';
 import {Button, Col, Container, Row} from 'react-bootstrap';
 import { Justify } from 'react-bootstrap-icons';
@@ -36,7 +36,9 @@ export default function Practice_flex() {
   return (
     <Container className='Container2'>
 
-    
+    <Fragment>
+      
+    </Fragment>
 
       <hr></hr>
 

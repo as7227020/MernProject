@@ -48,6 +48,8 @@ import FirendBar from '../../components/fbview/FirendBar';
 import FriendBarContent from '../../components/fbview/FriendBarContent';
 import Title_Video from '../../components/title/Title_Video';
 import Quote01 from '../../components/quote/Quote01';
+import MyAdsTest from '../../components/ads/MyAdsTest';
+import App_Practice01 from '../../components/practice/App_Practice01';
 /*
  <NavBar02/>
 <Title01/>
@@ -70,13 +72,8 @@ export default function FindPage() {
     <>
    
     <Container fluid>
-    <NavBar02/>
-      <Title_Video/>
-    <Title03/>
-    <AddFirend/>
-    <FriendBarContent/>
-  
-    <Quote01/>
+      <App_Practice01/>
+   
     </Container>
    
  
@@ -84,6 +81,21 @@ export default function FindPage() {
     )
 }
 /*
+
+ <NavBar02/>
+
+      <Title_Video/>
+      <div style={{width:'600px', height:'600px', border:'1px solid red'}}>
+        <h1>Ads Area</h1>
+      <MyAdsTest/>
+      </div>
+     
+    <Title03/>
+    <AddFirend/>
+    <FriendBarContent/>
+  
+    <Quote01/>
+
 
    <>
     <div className="container">

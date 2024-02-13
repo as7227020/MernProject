@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row ,InputGroup, Stack, Button} from 'react-bootstrap';
 import  './FirendBar.css';
-const FirendBar = () => {
+const FirendBar = ({props, onMyClick}) => {
 
     const [BeSelect,SetBeSelect] = useState(false);
 
@@ -14,7 +14,13 @@ const FirendBar = () => {
 
     return (
         <>
-        <Container fluid className='contaninerroot' onMouseEnter={handleMouseEnter} onMouseLeave={()=>{SetBeSelect(false)}}>
+        <Container fluid className='contaninerroot' onMouseEnter={handleMouseEnter} onMouseLeave={()=>{SetBeSelect(false)}} onClick={(e)=>{
+           e.preventDefault(); 
+           if(onMyClick)
+           {
+            onMyClick("子組件運行");
+           }
+        }}>
             <Row >
                 <Col md='3' className='bgcolor' style={{}}>
                 <Row md={3} className='userimgroot' >
@@ -25,7 +31,7 @@ const FirendBar = () => {
                 <Col className='bgcolor2'>
 
                 <Row style={{}}>
-                     <p className='usernameroot' style={{fontWeight:'800',backgroundColor:'',marginBottom:'-0px'}}>使用者名字</p>
+                     <p className='usernameroot' style={{fontWeight:'800',backgroundColor:'',marginBottom:'-0px'}}>{props}</p>
                 </Row>
 
                 <Row style={{backgroundColor:''}}>
