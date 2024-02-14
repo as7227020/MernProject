@@ -1,6 +1,13 @@
-import React, { useReducer, useState } from 'react'
+import React, { Suspense, lazy, useReducer, useState } from 'react'
 import NoteList from './App_Practice_Note'
-import App_Practice_Count from './App_Practice_Count';
+
+//註解改為懶加載
+//import App_Practice_Count from './App_Practice_Count';
+
+//模擬懶加載的延遲
+const delay = (ms) => new Promise((resolev)=>{setTimeout(resolev, ms);})
+
+const App_Practice_Count = lazy(() => delay(1000).then(()=> import('./App_Practice_Count')));
 
 let noteId = 0;
 
@@ -84,7 +91,10 @@ console.log("刪除ID : "+id);
     <NoteList notes={notes} onDelete={deleteNoteById}/>
     <input type='text' value={noteContent} onChange={ e =>{handleNoteInput(e)}} placeholder='輸入內容...'></input>
     <button onClick={addNote}>增加</button>
+    <Suspense fallback={<div>故意延遲一秒鐘 測試懶加載...</div>}>
     <App_Practice_Count count={notes.length}/>
+    </Suspense>
+    
    </main>
   )
 }

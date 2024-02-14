@@ -42,7 +42,7 @@ import Title03 from '../../components/title/Title03';
 import Practice_flex from '../../components/practice/Practice_flex';
 import Delayed from '../../scripts/Delayed';
 import DelayComp from '../../scripts/DelayedModel';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import AddFirend from '../../components/fbview/AddFirend';
 import FirendBar from '../../components/fbview/FirendBar';
 import FriendBarContent from '../../components/fbview/FriendBarContent';
@@ -50,6 +50,7 @@ import Title_Video from '../../components/title/Title_Video';
 import Quote01 from '../../components/quote/Quote01';
 import MyAdsTest from '../../components/ads/MyAdsTest';
 import App_Practice01 from '../../components/practice/App_Practice01';
+import App_Practice_useCallBack from '../../components/practice/App_Practice_useCallBack';
 /*
  <NavBar02/>
 <Title01/>
@@ -71,17 +72,20 @@ export default function FindPage() {
   return (
     <>
    
-    <Container fluid>
-      <App_Practice01/>
-   
+   <Container fluid>
+    <Title_Video/>
+  
     </Container>
+   
+ 
    
  
       </>
     )
 }
 /*
-
+<App_Practice_useCallBack/>
+ <App_Practice01/>
  <NavBar02/>
 
       <Title_Video/>

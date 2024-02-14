@@ -13,7 +13,7 @@ video{
 
 .content{
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     top: 0;
     display: flex;
@@ -55,11 +55,27 @@ video{
     animation: focus-in-contract 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
   }
 
+  .fade-enter{
+    opacity: 0;
+  }
+  .fade-enter-active{
+    opacity: 1;
+    animation: focus-in-contract 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+  }
+
+.fade-exit{
+ opacity: 1;
+}
+.fade-exit-active{
+  opacity: 0;
+  transition: opacity 500ms;
+ }
+ 
 
   @keyframes focus-in-contract {
     0% {
         filter: blur(12px);
-        scale: 6;
+        scale: 2;
       opacity: 0;
     }
     100% {
