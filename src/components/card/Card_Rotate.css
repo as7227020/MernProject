@@ -1,0 +1,51 @@
+.card{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.front{
+    background: url('https://picsum.photos/id/870/200/300') center center no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.back{
+    background: url('https://picsum.photos/id/871/200/300') center center no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+
+    /* transform-origin: top;
+    transform: rotateX(90deg); */
+
+clip-path: inset(100px 0px);
+opacity: 0;
+filter: blur(12px);
+
+}
+.card_side{
+    position: absolute;
+    
+    border-radius: 8px;
+    
+    transition: all .3s ease-in-out;
+}
+
+
+
+.card:hover .front { 
+     transform: rotateX(-90deg);  
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.card:hover .back  { 
+    /* transform: rotateX(0deg);  */
+    clip-path: inset(0px 00px);
+    filter: blur(0px);
+    opacity: 1;
+}

@@ -23,7 +23,7 @@ import Alert from 'react-bootstrap/Alert';
 import Card_01 from '../../components/card/Card_01';
 import './FindPage.css'
 import RatingCard from '../../components/ratingcard/RatingCard';
-import NavBar01 from '../../components/navbar01/NavBar01';
+import NavBar01 from '../../components/nav/NavBar01';
 import NavBar02 from '../../components/navbar02/NavBar02';
 import Social01 from '../../components/social/Social01';
 import Footer01 from '../../components/footer/Footer01';
@@ -51,6 +51,7 @@ import Quote01 from '../../components/quote/Quote01';
 import MyAdsTest from '../../components/ads/MyAdsTest';
 import App_Practice01 from '../../components/practice/App_Practice01';
 import App_Practice_useCallBack from '../../components/practice/App_Practice_useCallBack';
+import Card_Rotate from '../../components/card/Card_Rotate';
 /*
  <NavBar02/>
 <Title01/>
@@ -73,8 +74,9 @@ export default function FindPage() {
     <>
    
    <Container fluid>
-    <Title_Video/>
-  
+    
+   <Content_01/>
+
     </Container>
    
  
@@ -84,6 +86,7 @@ export default function FindPage() {
     )
 }
 /*
+<Card_Rotate/>
 <App_Practice_useCallBack/>
  <App_Practice01/>
  <NavBar02/>

@@ -1,5 +1,4 @@
 .rightbar{
-    flex: 3.5;
 }
 
 .rightbarWrapper{
@@ -78,9 +77,10 @@
 }
 
 .rightbarpromotionImg{
-    width: 85%;
-    border-radius: 10px;
-    margin: 15px 0;
+    width: 100%;
+    border-radius: 5px;
+    margin: 25px 0;
+    
 }
 
 .promotionName{

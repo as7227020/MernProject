@@ -13,7 +13,7 @@
   }
   
 .navbar-sticky {
-    opacity: 0.9;
+    opacity: 0.85;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -27,20 +27,19 @@
 
 
 
-@media (max-width : 1000px){
+  @media screen and (min-width: 0px) and (max-width: 1000px){
+   
     .navbar {
         background: var(--bs-dark);
-      }
-
-    .hero .image-container{
-        display: flex;
-        justify-content: center;
-
     }
-
-    .hero .text-container{
-        text-align: center;
+    .sadsad{
+      height: 100vh;
     }
+    .navbar-sticky
+    {
+      opacity: 1;
+    }
+   
 }
 
 .MyIcon{
@@ -73,3 +72,24 @@
       opacity: 1;
     }
   }
+
+  .sadsad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.1rem;
+    gap: 15px;
+    
+  }
+  .Linkfont{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .Linkfont:hover{
+    scale: 1.1;
+    transition: scale 0.5s;
+  }
+  

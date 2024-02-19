@@ -13,6 +13,14 @@
 
 }
 
+@media (max-width: 767px) {
+  /* .sidebarFriendList{
+    display: none;
+  }
+     */
+  }
+
+
 .sidebarKistItem{
     display: flex;
     align-items: center;
@@ -20,18 +28,44 @@
     padding:  4px 6px;
     cursor: pointer;
     box-shadow: 3px 7px 12px -10px #211111;
-    border-radius: 10px;
+    border-radius: .25em;
     transition: all 0.3s;
+    border: 1px solid rgb(173, 173, 173);
+
+
+
+    position: relative;
+    isolation: isolate;
 }
 
 .sidebarKistItem:hover{
     box-shadow: none;
-    transform: translateY(5px);
+    transform: translateY(3px);
+    scale: 0.98;
 }
 
 .sidebarIcon{
     font-size: 35px !important;
     margin-right: 10px;
+    
+}
+.testtt{
+
+}
+.sidebarKistItem::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+   background: rgb(194, 95, 141);
+   clip-path: circle(0% at 0 0);
+   border-radius: 0.25em;
+    transition: all 300ms ease-in-out;
+}
+.sidebarKistItem:hover::after,
+.sidebarKistItem:focus-visible::after{
+    clip-path: circle(100%);
 }
 
 .sidebarListItemText{

@@ -8,8 +8,8 @@ export default function GetInfoView01() {
     <Container >
       <Row>
         <Col lg='5'>
-        <Container className='mt-n6 mb-3'>
-        <Image src='https://picsum.photos/800/600' fluid></Image>
+        <Container className='leftimgroot'>
+        <Image className='leftimg' src='https://picsum.photos/800/600' fluid></Image>
         </Container>
         </Col>
 

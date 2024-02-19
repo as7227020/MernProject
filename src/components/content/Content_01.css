@@ -1,0 +1,44 @@
+.content01title{
+    background: linear-gradient(245deg, #4d9559 0%, #38703d 28.43%, #133917 75.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    pointer-events: none;
+}
+/*
+background: linear-gradient(to right, #ff3aad , rgb(32, 91, 252));
+
+f-flex flex-column justity-content-center h-100
+*/
+
+.content01Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.content01btn
+{
+    margin-top: 25px;
+
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.content01btn:hover
+{
+    background: transparent;
+    border: 1px solid #16471e;
+    transform: translateX(10px);
+
+}

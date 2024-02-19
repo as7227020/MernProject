@@ -41,15 +41,15 @@ export default function NavBar02() {
 
   return (
     <>
-    <Navbar ref={navRef} className='navbar fixed-top navbar-dark' expand="lg" >
+    <Navbar ref={navRef}  className='navbar fixed-top navbar-dark' expand="lg" >
       <Container>
         <img src={mylogo} className='MyIcon'/>
         <a href='#' className='navbar-brand'>履歷網站</a>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav  className='ms-auto'>
-            <Nav.Link className='fw-semibold' href="#features">Features</Nav.Link>
-            <Nav.Link className='fw-semibold' href="#pricing">Pricing</Nav.Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className='ToggleC'/>
+        <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
+          <Nav className='sadsad' >
+            <Nav.Link className='fw-semibold Linkfont' href="#features">Features</Nav.Link>
+            <Nav.Link className='fw-semibold Linkfont' href="#pricing">Pricing</Nav.Link>
             <Button variant="primary" className='fw-semibold'>聯絡我們拉</Button>
           </Nav>
         </Navbar.Collapse>

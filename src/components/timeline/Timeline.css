@@ -1,7 +1,10 @@
 .timeline{
-    flex: 6;
+    flex: 8;
+    background-color: aqua;
 }
 
 .timelineWrapper{
     padding: 20px;
+    width: 100%;
+    
 }

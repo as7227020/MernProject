@@ -20,12 +20,13 @@ export default function Sidebar() {
                     </Link>
                 </li>
                 <li className='sidebarKistItem'>
-                    <Search className='sidebarIcon'/>
-                   
+                
+                <Search className='sidebarIcon'/>
                     <span className='sidebarListItemText' onClick={()=>{
                          localStorage.setItem("user",null);
                          window.location.reload();
                     }}>登出</span>
+                
                   
                 </li>
                 <li className='sidebarKistItem'>

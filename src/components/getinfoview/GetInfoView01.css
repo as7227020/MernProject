@@ -3,3 +3,11 @@
     background-size: cover;
     margin-top: 150px;
   }
+
+.leftimgroot{
+  margin-bottom: 30px;
+  margin-top: -50px;
+}
+.leftimg{
+  border-radius: 15px;
+}
