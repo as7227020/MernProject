@@ -1,4 +1,4 @@
-import React , { useRef ,useEffect} from 'react'
+import React , { useRef ,useEffect, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Container from 'react-bootstrap/Container';
@@ -8,9 +8,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import './NavBar02.css'
 import mylogo from '../../mylogo.png';
+import { GetNowScrollY } from '../../scripts/GetNowScrollY';
 
 //data-bs-theme="dark" bg='dark' 
 export default function NavBar02() {
+
+  
 
   //Navbar的透明用
   const navRef = useRef();
@@ -20,14 +23,14 @@ export default function NavBar02() {
       {
         navRef.current.classList.add("bg-dark");
         navRef.current.classList.add('navbar-sticky');
-        console.log("ADD");
+        //console.log("ADD");
       
       } 
       else 
       {
         navRef.current.classList.remove("bg-dark");
         navRef.current.classList.remove('navbar-sticky');
-        console.log("remove");
+        //console.log("remove");
       }
       
     };
@@ -50,7 +53,7 @@ export default function NavBar02() {
           <Nav className='sadsad' >
             <Nav.Link className='fw-semibold Linkfont' href="#features">Features</Nav.Link>
             <Nav.Link className='fw-semibold Linkfont' href="#pricing">Pricing</Nav.Link>
-            <Button variant="primary" className='fw-semibold'>聯絡我們拉</Button>
+            <Button variant="primary" className='fw-semibold'>聯絡我們拉{<GetNowScrollY/>}</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

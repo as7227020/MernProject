@@ -15,3 +15,8 @@ export function  ScrollToPos(objName){
         //console.log('空');
     }
 }
+
+export function  ScrollToTop(){
+
+   window.scrollTo(0,0);
+}

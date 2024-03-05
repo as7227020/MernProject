@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge';
@@ -52,6 +52,9 @@ import MyAdsTest from '../../components/ads/MyAdsTest';
 import App_Practice01 from '../../components/practice/App_Practice01';
 import App_Practice_useCallBack from '../../components/practice/App_Practice_useCallBack';
 import Card_Rotate from '../../components/card/Card_Rotate';
+import ScrollToTopBtn from '../../scripts/ScrollToTopBtn';
+import Image01 from '../../components/image/Image01';
+
 /*
  <NavBar02/>
 <Title01/>
@@ -70,15 +73,20 @@ import Card_Rotate from '../../components/card/Card_Rotate';
 export default function FindPage() {
     const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
     const [open, setOpen] = useState(false);
+
+
   return (
     <>
    
-   <Container fluid>
-    
-   <Content_01/>
-
+   <Container>
+   <NavBar02/>
+   <Title03/>
+<Card_03/>
+    <GetInfoView01/>
+      <Social01/>
+      <ScrollToTopBtn/>
+      <Image01/>
     </Container>
-   
  
    
  

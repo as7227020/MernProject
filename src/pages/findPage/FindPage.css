@@ -1,0 +1,25 @@
+.topbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 1px;
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.topbtn-vaule{
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: rgb(87, 25, 158);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+
+}

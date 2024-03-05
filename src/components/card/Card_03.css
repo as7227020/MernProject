@@ -1,0 +1,7 @@
+.avatarimg{
+    vertical-align: middle;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,24 @@
+.scrolltotopbtn{
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(197, 248, 248);
+    font-size: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.scrolltotopbtn:hover{
+    transform: scale(1.05);
+}
+.scrolltotopbtn-font{
+    transform: translateY(0);
+    }
+.scrolltotopbtn-font:hover{
+transform: translateY(30);
+}

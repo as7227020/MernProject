@@ -18,6 +18,13 @@ f-flex flex-column justity-content-center h-100
     justify-content: center;
     flex-direction: column;
     margin: 10px;
+    
+}
+
+.content01Containercol{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content01btn
@@ -41,4 +48,140 @@ f-flex flex-column justity-content-center h-100
     border: 1px solid #16471e;
     transform: translateX(10px);
 
+}
+
+
+.wrapper {
+    
+    transform-style: preserve-3d;
+  }
+
+  .mydiv { /* image is 460px x 460px  infinite*/
+    width:400px;
+    height:100px; /* 50 divisions */
+    background-image: url(https://picsum.photos/id/870/400/400?grayscale&blur=2);
+    background-size: cover;
+    
+    
+    animation: turner 5s infinite;
+  }
+
+  .one {
+    background-position:0 0;
+  }
+  .one2 {
+    background-position:0 -100%;
+    animation-delay: .1s;
+  }
+  .one3 {
+    background-position:0 -200%;
+    animation-delay: .2s;
+  }
+  .one4 {
+    background-position:0 -300%;
+    animation-delay: .3s;
+  }
+
+  .ccc{
+  }
+
+  @keyframes turner{
+    0%   {  transform: translateY(0);}
+    50%   {  transform: translateY(50);}
+    100% {   transform: translateY(0);}
+  }
+
+
+  .view {
+    text-align: center;
+}
+
+.circle {
+  width:200px;
+  height:200px;
+  
+    overflow: hidden;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  background: url("https://picsum.photos/600") no-repeat center center;
+}
+
+.circle:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 90%;
+}
+
+
+.background{
+    position: relative;
+  width: auto;
+  height: 600px;
+    background-image:url('https://picsum.photos/600');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.blur{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url('https://picsum.photos/600');
+    background-size:cover;
+    transition:all .5s ease;
+    backface-visibility: hidden;
+}
+
+.background:hover .blur{
+    filter:blur(3px);
+}
+.background:hover .text{
+    opacity: 1;
+}
+.text{
+    display: inline-block;
+    font-family: sans-serif;
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    left:50%;
+    top:80%;
+
+    text-decoration: underline;
+    text-underline-position: under;
+
+    transform:translate(-50%,-50%);
+    opacity: 0;
+    transition:all .5s ease;
+}
+
+.background2-contaoner{
+  width: auto;
+  height: 600px;
+  overflow: hidden;
+
+  border: 1px solid #000000af;
+  box-shadow: 6px 6px 15px -5px #202020;
+  border-radius: 10px;
+}
+.background2{
+  width:auto;
+  height: 600px;
+  background: url('https://picsum.photos/600') no-repeat center center;  
+	background-size: cover; 
+  transition: all .4s;
+  transform: scale(1);
+}
+
+.background2:hover{
+  transform: scale(1.1);
 }

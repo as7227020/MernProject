@@ -5,7 +5,30 @@ import Button from 'react-bootstrap/Button';
 import ModalExample01 from '../modalexample/ModalExample01';
 import './Content_01.css'
 import { GraduallyShow } from '../../scripts/GraduallyShow';
+import gsap from 'gsap';
+
+const Mask = ({ mask, children }) => (
+  <div style={{
+    WebkitMaskImage: mask,
+    maskImage: mask
+  }}>
+    {children}
+  </div>
+)
+
+function gggg(){
+  gsap.to(".circleMask", {r: 0,
+  }, {
+    r: 300,
+    repeat: -1,
+    duration: 6,
+    ease: 'power3.inOut',
+    yoyo: true
+  })
+}
+
 export default function Content_01() {
+
 
   //Modal視窗用
   const [modalShow, setModalShow] = React.useState(false);
@@ -16,7 +39,7 @@ export default function Content_01() {
     <section id='details' className='details my-5'>
     <Container>
       <Row>
-        <Col md={6}>
+        <Col md={6} className='content01Containercol'>
           <GraduallyShow obj={
 
 <Container className='content01Container'>
@@ -60,12 +83,16 @@ export default function Content_01() {
         </Col>
 
         <Col md={6}>
-       
-       
 
-          <GraduallyShow  delay={3.5} playSpeed={1.5} distanceX={0} distanceY={0} obj={
-          <Image src='https://picsum.photos/600' fluid ></Image>
-           }/>
+        <GraduallyShow  delay={3.5} playSpeed={1.5} distanceX={0} distanceY={0} obj={
+         <div className='background2-contaoner'>
+ <div class="background2">
+          
+          <h1 class="text">經典再現</h1>
+         </div>
+         </div>
+        
+         }/>
 
         </Col>
       </Row>
@@ -73,3 +100,36 @@ export default function Content_01() {
    </section>
   )
 }
+/*
+
+        <GraduallyShow  delay={3.5} playSpeed={1.5} distanceX={0} distanceY={0} obj={
+          <div class="background">
+            <div class="blur"></div>
+            <h1 class="text">經典再現</h1>
+           </div>
+         }/>
+
+ <Image className="good" src='https://picsum.photos/600' onClick={gggg} fluid ></Image>
+  <GraduallyShow  delay={3.5} playSpeed={1.5} distanceX={0} distanceY={0} obj={
+           
+          <Image src='https://picsum.photos/600' fluid ></Image>
+           }/>
+radial-gradient(ellipse, transparent 35%, black 100%)
+linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
+
+       <Mask mask="radial-gradient(ellipse, transparent 5%, black 100%)">  <Image src='https://picsum.photos/600' fluid mask='circleMask'></Image></Mask>
+  
+         <section className='wrapper'>
+       <div className='mydiv one'></div>
+       <div className='mydiv one2'></div>
+       <div className='mydiv one3'></div>
+       <div className='mydiv one4'></div>
+       </section>
+
+
+              <div class="view">
+	<div class="circle">
+		 
+	</div>
+</div>
+*/
